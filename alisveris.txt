@@ -2,3 +2,5 @@ armut
 p�rasa 
 elma
 kayısı
+kivi
+
