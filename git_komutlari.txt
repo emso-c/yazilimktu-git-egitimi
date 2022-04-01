@@ -1,0 +1,72 @@
+// Boş bir git repository'si oluşturur
+git init
+
+// Kaynak URL'deki git repository'sini dizine klonlar
+git clone <kaynak_url>
+
+// Değişiklikleri yapan kullanıcının bilgilerini ayarlar
+git config --global user.email "<email_adresi>"
+git config --global user.name "<Kullanıcı_adı>"
+
+// Değişiklik yapılan dosyaları staging area'ya gönderir
+git add <dosya>
+
+// Seçilen dosyayı staging area'dan çıkarır
+git rm <dosya>
+
+// Dizinin o anki değişiklik durumunu bildirir
+git status
+
+// Staging area'daki değişiklikleri kaydeder
+git commit -m <mesaj>
+
+// Kaydedilmeyen değişilşikleri gösterir
+git diff
+
+// Daha önce yapılan değişiklikleri gösterir
+git log (--oneline | --graph | --all)
+
+// Herhangi bir commit'e dönmemizi sağlar
+git checkout <commit_hash | branch>
+
+// Staging area'daki tüm değişiklikleri geri döndürür (unstage)
+git reset
+
+// Staging area'daki değişiklikleri tamamen siler ve en sonki commit'e döner
+git reset --hard
+
+// Remote bir repository belirler.
+git remote <kaynak_adı> <kaynak_url>
+
+// Yerel değişiklikleri remote repository'ye iletir.
+git push
+
+// Remote repository'den güncel değişikliklerin kayıtlarını getirir
+git fetch
+
+// Remote repository'den güncel değişiklikleri getirir
+git pull
+
+// Bulunan dalları gösterir
+git branch
+
+// Yeni bir dal oluşturur
+git branch <branch_adi>
+
+// Bir dala geçmemizi sağlar
+git switch <branch_adi>
+
+// Bir dalı başka bir dal ile birleştirir
+git merge
+
+
+
+FAYDALI KAYNAKLAR:
+Türkçe:
+- https://medium.com/@emrullahluleci/git-ve-github-nas-l-kullan-l-r-7d3cc886b77e
+- https://dev.to/aciklab/git-ve-github-nedir-nasil-kullanilir-bmk
+
+İngilizce:
+- https://www.w3schools.com/git/
+- https://www.atlassian.com/git
+- https://git-scm.com/docs/gittutorial
